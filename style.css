@@ -302,10 +302,11 @@ footer {
 @media screen and (min-width: 769px) and (max-width:1023px){
 
   h1 {
-    font-size: var(--font-size-xl);
-  }
-  h2 {
     font-size: var(--font-size-l);
+  }
+
+  h2 {
+    font-size: var(--font-size-m);
   }
 
   .educationButton, .projectsButton {
@@ -313,7 +314,7 @@ footer {
   }
   
   #introContentPage {
-    top: 0.5em;
+    top: 0em;
     gap: 0em;
   }
 
@@ -337,7 +338,7 @@ footer {
   }
 
   .avatarDiv > img {
-    width: 35%;
+    width: 30%;
   }
 }
 
