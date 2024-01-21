@@ -306,8 +306,8 @@ footer {
   }
   
   #introContentPage {
-    top: 1.5em;
-    gap: 2em;
+    top: 1em;
+    gap: 0em;
   }
 
   button {
@@ -330,7 +330,7 @@ footer {
   }
 
   .avatarDiv > img {
-    width: 40%;
+    width: 35%;
   }
 }
 
