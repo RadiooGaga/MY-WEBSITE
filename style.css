@@ -216,7 +216,7 @@ footer {
   }
 
   .skillsDiv, .aboutMeDiv {
-    gap: 10px;
+    gap: 8px;
     padding: var(--padding-s);
   }
 
@@ -253,7 +253,7 @@ footer {
     font-size: var(--font-size-l);
   }
   h2 {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-ms);
   }
 
   .educationButton, .projectsButton {
@@ -271,7 +271,7 @@ footer {
   }
 
   .skillsDiv, .aboutMeDiv {
-    gap: 8px;
+    gap: 10px;
     padding: var(--padding-s);
   }
 
@@ -297,7 +297,7 @@ footer {
   }
 
   h2 {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-ms);
   }
 
   .educationButton, .projectsButton {
@@ -315,7 +315,7 @@ footer {
   }
 
   .skillsDiv, .aboutMeDiv {
-    gap: 10px;
+    gap: 12px;
     padding: var(--padding-m);
   }
 
