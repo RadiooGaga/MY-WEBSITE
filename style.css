@@ -204,15 +204,15 @@ footer {
 @media screen and (max-width:480px) {
 
   h1 {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
   }
 
   h2 {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-l);
   }
 
   .educationButton, .projectsButton {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
   }
 
   .skillsDiv, .aboutMeDiv {
