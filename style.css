@@ -253,7 +253,7 @@ footer {
     font-size: var(--font-size-xl);
   }
   h2 {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-l);
   }
 
   .educationButton, .projectsButton {
@@ -266,12 +266,12 @@ footer {
   }
 
   button {
-    font-size: var(--font-size-ms);
+    font-size: var(--font-size-m);
     padding: 6px 8px;
   }
 
   .skillsDiv, .aboutMeDiv {
-    gap: 10px;
+    gap: 13px;
     padding: var(--padding-s);
   }
 
