@@ -250,14 +250,14 @@ footer {
 @media screen and (min-width: 481px) and (max-width:768px){
 
   h1 {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
   }
   h2 {
-    font-size: var(--font-size-ms);
+    font-size: var(--font-size-m);
   }
 
   .educationButton, .projectsButton {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
   }
 
   #introContentPage {
@@ -293,15 +293,15 @@ footer {
 @media screen and (min-width: 769px) and (max-width:1023px){
 
   h1 {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
   }
 
   h2 {
-    font-size: var(--font-size-ms);
+    font-size: var(--font-size-m);
   }
 
   .educationButton, .projectsButton {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
   }
   
   #introContentPage {
