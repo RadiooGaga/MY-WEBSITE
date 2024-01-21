@@ -100,7 +100,7 @@ header {
 
 .skillsDiv {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   width: 100%;
   height: auto;
