@@ -239,7 +239,7 @@ footer {
   }
 
   .avatarDiv > img {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -276,6 +276,7 @@ footer {
   }
 
   .menuDiv {
+    gap: 5px;
     flex-direction: column; 
   }
 
@@ -284,7 +285,7 @@ footer {
   }
 
   .avatarDiv > img {
-    width: 70%;
+    width: 50%;
   }
 }
   
@@ -310,12 +311,12 @@ footer {
   }
 
   button {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-ms);
     padding: 8px 12px;
   }
 
   .skillsDiv, .aboutMeDiv {
-    gap: 12px;
+    gap: 10px;
     padding: var(--padding-m);
   }
 
@@ -329,7 +330,7 @@ footer {
   }
 
   .avatarDiv > img {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -338,7 +339,7 @@ footer {
 @media screen and (min-width:1024px) and (max-width:1280px) {
 
   #introContentPage {
-    top: 1.5em;
+    top: 1.8em;
     gap: 1.5em;
   }
 
@@ -353,7 +354,7 @@ footer {
   }
 
   .avatarDiv > img {
-    width: 60%;
+    width: 70%;
   }
 }
 
