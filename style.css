@@ -173,15 +173,6 @@ header {
   object-fit: contain;
 }
 
-#fullContainer {
-  width: 100%;
-  height:auto;
-  display:none;
-  position: relative;
-  z-index: 1;
-  gap:2px;
-}
-
 .footerDiv {
   display: flex;
   flex-direction: row;
@@ -210,15 +201,13 @@ footer {
 }
 
 
-
-
 @media screen and (max-width:480px) {
 
   h1 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
   }
   h2 {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
   }
 
   .educationButton, .projectsButton {
@@ -236,8 +225,8 @@ footer {
   }
 
   #introContentPage {
-    top: 1em;
-    gap: 1em;
+    top: 0.5em;
+    gap: 0.5em;
   }
 
   .menuDiv {
@@ -249,7 +238,7 @@ footer {
   }
 
   .avatarDiv > img {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -259,10 +248,10 @@ footer {
 
 @media screen and (min-width: 481px) and (max-width:768px){
   h1 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
   }
   h2 {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
   }
 
   .educationButton, .projectsButton {
@@ -304,18 +293,17 @@ footer {
   h1 {
     font-size: var(--font-size-l);
   }
-
   h2 {
     font-size: var(--font-size-m);
   }
 
   .educationButton, .projectsButton {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
   }
   
   #introContentPage {
-    top: 0em;
-    gap: 0em;
+    top: 1.5em;
+    gap: 2em;
   }
 
   button {
@@ -338,7 +326,7 @@ footer {
   }
 
   .avatarDiv > img {
-    width: 38%;
+    width: 40%;
   }
 }
 
