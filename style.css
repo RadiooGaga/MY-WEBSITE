@@ -217,7 +217,7 @@ footer {
 
   .skillsDiv, .aboutMeDiv {
     gap: 10px;
-    padding: var(--padding-m);
+    padding: var(--padding-s);
   }
 
   button {
@@ -266,7 +266,7 @@ footer {
   }
 
   button {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-ms);
     padding: 6px 8px;
   }
 
@@ -301,16 +301,16 @@ footer {
   }
 
   .educationButton, .projectsButton {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
   }
   
   #introContentPage {
-    top: 1.5em;
-    gap: 2em;
+    top: 0em;
+    gap: 1em;
   }
 
   button {
-    font-size: var(--font-size-ms);
+    font-size: var(--font-size-m);
     padding: 8px 12px;
   }
 
