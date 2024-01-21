@@ -301,12 +301,19 @@ footer {
   
 @media screen and (min-width: 769px) and (max-width:1023px){
 
-  .educationButton, .projectsButton {
+  h1 {
     font-size: var(--font-size-xl);
+  }
+  h2 {
+    font-size: var(--font-size-l);
+  }
+
+  .educationButton, .projectsButton {
+    font-size: var(--font-size-l);
   }
   
   #introContentPage {
-    top: 0.7em;
+    top: 0.5em;
     gap: 0em;
   }
 
