@@ -319,7 +319,7 @@ footer {
   }
 
   .menuLeft, .menuRight {
-    border: 2px solid wheat;
+    border: 1px solid wheat;
   }
 
   .avatarDiv > img {
@@ -360,7 +360,7 @@ footer {
   }
 
   .footerDiv {
-    padding: var(--padding-l);
+    padding: var(--padding-xl);
   }
 
 }
