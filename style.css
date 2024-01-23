@@ -235,7 +235,7 @@ footer {
   }
 
   .headerDiv {
-    padding: var(--padding-m);
+    padding: var(--padding-l);
   }
 
   .educationButton, .projectsButton {
@@ -248,8 +248,8 @@ footer {
   }
 
   #introPage {
-    top: 7em;
-    gap: 1em;
+    top: 6em;
+    gap: 2em;
   }
 
   .menuDiv {
@@ -271,7 +271,7 @@ footer {
   }
 
   .aboutMeDiv {
-    padding: var(--padding-l); 
+    padding: 22px 14px; 
   }
   
   .aboutmeParagraph {
