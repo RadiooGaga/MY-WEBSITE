@@ -148,14 +148,6 @@ header {
   background-color: var(--rtc-color-almostBlack);
 }
 
-/*  JUGAR CON LOS COLORES DE LOS BOTONES AL PASAR POR ENCIMA
-#skillsDiv > button:hover {
-  cursor: pointer;
-  background-color: #384d50;
-}
-*/
-
-
 #skillsDiv {
   display: flex;
   flex-wrap: wrap;
@@ -184,7 +176,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 33%;
-  /*border: 2px solid wheat;*/
+
 }
 
 .avatarDiv {
@@ -192,7 +184,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 33%;
-  /*border: 1px solid wheat;*/
+
 }
 
 .avatarDiv > img {
@@ -301,6 +293,18 @@ footer {
 
 @media screen and (max-width:480px) {
 
+  #topButton {
+    position: absolute;
+    right: 1em;
+    bottom: 5em;
+  }
+  
+  #topButton > img {
+    width: 40px;
+    height: 40px;
+    padding: var(--padding-s);
+  }
+
   h1 {
     font-size: var(--font-size-xl);
   }
@@ -390,6 +394,18 @@ footer {
 
 @media screen and (min-width: 481px) and (max-width:768px){
 
+  #topButton {
+    position: absolute;
+    right: 2em;
+    bottom: 8em;
+  }
+  
+  #topButton > img {
+    width: 40px;
+    height: 40px;
+    padding: var(--padding-s);
+  }
+
   h1 {
     font-size: var(--font-size-xl);
   }
@@ -431,6 +447,10 @@ footer {
   .aboutmeParagraph {
     padding: var(--padding-xl); 
     font-size: var(--font-size-ms);
+  }
+
+  .contactForm {
+    height: 400px;
   }
 
 }
