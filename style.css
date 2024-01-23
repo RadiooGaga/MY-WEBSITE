@@ -79,15 +79,34 @@ p {
   letter-spacing: 1px;
 }
 
-.educationButton:hover, .projectsButton:hover, .aboutMeButton:hover {
+#educationButton:hover, #projectsButton:hover, #aboutMeButton:hover {
   cursor: pointer;
 } 
 
-.educationButton, .projectsButton {
+#educationButton, #projectsButton {
   font-family: var(--rtc-font-family-2);
   font-size: 40px;
   color: var(--rtc-color-almostWhite);
   background-color: var(--rtc-color-petrolBlue);
+}
+
+#topButton:hover {
+  cursor: pointer;
+}
+
+#topButton {
+  position: absolute;
+  right: 3em;
+  bottom: 7em;
+  background-color: var(--rtc-color-surgeryGreen);
+  border-radius:10px ;
+}
+
+#topButton > img {
+ 
+  width: 60px;
+  height: 60px;
+  padding: var(--padding-m);
 }
 
 header {
@@ -100,7 +119,7 @@ header {
   background-color: var(--rtc-color-almostBlack);
 }
 
-.headerDiv {
+#headerDiv {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -111,7 +130,7 @@ header {
   background-color: var(--rtc-color-almostBlack);
 }
 
-.headerDiv, .footerDiv {
+#headerDiv, .footerDiv {
   padding: var(--padding-xxl);
 }
 
@@ -181,7 +200,7 @@ header {
   object-fit: contain;
 }
 
-.aboutMeDiv {
+#aboutMeDiv {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -290,7 +309,7 @@ footer {
     font-size: var(--font-size-l);
   }
 
-  .headerDiv {
+  #headerDiv {
     padding: var(--padding-l);
   }
 
@@ -299,11 +318,11 @@ footer {
     gap: 1em;
   }
 
-  .educationButton, .projectsButton {
+  #educationButton, #projectsButton {
     font-size: var(--font-size-xl);
   }
 
-  #skillsDiv, .aboutMeDiv {
+  #skillsDiv, #aboutMeDiv {
     gap: 8px;
     padding: var(--padding-m);
   }
@@ -326,7 +345,7 @@ footer {
     width: 50%;
   }
 
-  .aboutMeDiv {
+  #aboutMeDiv {
     padding: 22px 14px; 
   }
   
@@ -378,7 +397,7 @@ footer {
     font-size: var(--font-size-l);
   }
 
-  .educationButton, .projectsButton {
+  #educationButton, #projectsButton {
     font-size: var(--font-size-xl);
   }
 
@@ -387,7 +406,7 @@ footer {
     gap: 2em;
   }
 
-  #skillsDiv, .aboutMeDiv {
+  #skillsDiv, #aboutMeDiv {
     gap: 10px;
     padding: var(--padding-s);
   }
@@ -405,7 +424,7 @@ footer {
     width: 30%;
   }
 
-  .aboutMeDiv {
+  #aboutMeDiv {
     padding: 22px 14px; 
   }
   
@@ -420,16 +439,16 @@ footer {
 
 @media screen and (min-width: 769px) and (max-width:1023px){
 
-  .projectsButton, .educationButton {
+  #projectsButton, #educationButton {
     font-size: 28px;
   }
   
   #introPage {
-    top: 8em;
+    top: 7sem;
     gap: 2em;
   }
 
-  #skillsDiv, .aboutMeDiv {
+  #skillsDiv, #aboutMeDiv {
     gap: 10px;
     padding: 0px 20px;
   }
@@ -446,7 +465,7 @@ footer {
   .avatarDiv > img {
     width: 70%;
   }
-  .aboutMeDiv {
+  #aboutMeDiv {
     padding: 22px 14px; 
   }
   
@@ -465,7 +484,7 @@ footer {
     gap: 2em;
   }
 
-  #skillsDiv, .aboutMeDiv {
+  #skillsDiv, #aboutMeDiv {
     padding: 0px 25px;
     gap: 10px;
   }
@@ -474,7 +493,7 @@ footer {
     width: 60%;
   }
 
-  .aboutMeDiv {
+  #aboutMeDiv {
     padding: 22px 14px; 
   }
   
@@ -482,13 +501,17 @@ footer {
     padding: var(--padding-l); 
     font-size: var(--font-size-ms);
   }
+
+  .contact > h2 {
+    bottom: 28.2em;
+  }
 }
 
 
 
 @media screen and (min-width:1280px) and (max-width:1439px) {
 
-  .educationButton, .projectsButton {
+  #educationButton, #projectsButton {
     font-size: 28px;
   }
 
@@ -497,7 +520,7 @@ footer {
     gap: 1.2em;
   }
 
-  #skillsDiv, .aboutMeDiv {
+  #skillsDiv, #aboutMeDiv {
     gap: 20px;
     padding: 0px;
   }
@@ -509,7 +532,7 @@ footer {
   .avatarDiv > img {
     width: 60%;
   }
-  .aboutMeDiv {
+  #aboutMeDiv {
     padding: 25px 14px; 
   }
   
