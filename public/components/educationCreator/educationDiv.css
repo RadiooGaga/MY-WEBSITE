@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 60px 60px 90px;
+    padding: 60px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -33,19 +33,54 @@
     }
     
     #educationDiv > p {
-        padding-bottom: var(--padding-s);
+        font-size: var(--font-size-ms);
+        padding-bottom: var(--padding-l);
     }
 }
 
 
 @media screen and (min-width: 481px) and (max-width:768px){
+    #educationDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 30px 50px 40px;
+    }
+
+    #educationDiv > h3 {
+        padding: var(--padding-l);
+    }
+    
+    #educationDiv > p {
+        font-size: var(--font-size-ms);
+        padding-bottom: var(--padding-l);
+    }
 
 }
 
 @media screen and (min-width: 769px) and (max-width:1023px){
 
+    #educationDiv > h3 {
+        padding: var(--padding-l);
+    }
+    
+    #educationDiv > p {
+        font-size: var(--font-size-m);
+        padding-bottom: var(--padding-l);
+    }
+
 }
 
 @media screen and (min-width:1024px) and (max-width:1280px) {
+
+    #educationDiv > h3 {
+        padding: var(--padding-xl);
+    }
+    
+    #educationDiv > p {
+        font-size: var(--font-size-m);
+        padding-bottom: var(--padding-l);
+    }
 
 }

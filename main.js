@@ -3,7 +3,7 @@ import './style.css';
 import {addSkills} from "./public/components/skillsCreator/skills.js";
 import { addEducation } from './public/components/educationCreator/educationDiv.js';
 import { projectCreator } from './public/components/projectCreator/projectCreator.js';
-
+//import { sendFormFunction } from './public/components/contacto/contacto.js';
 
 const skillsArray = ["HTML", "CSS", "JAVASCRIPT", "NODE.JS", "GIT", "DESIGN", "PREMIERE", "PHOTOSHOP", "AUDIO SKILLS", "AI"];
 const educationArray = [
@@ -38,7 +38,8 @@ const projects = [
     {
         span: "GAMES HUB",
         img: "./assets/projectsImg/gamesImg.jpg",
-        button1: "WORK IN PROGRESS"
+        button1: "WORK IN PROGRESS",
+        button2: "WORK IN PROGRESS"
          
     }
 ]
@@ -82,16 +83,30 @@ aboutMeButton.className = "aboutMeButton";
 aboutMeButton.textContent = "ABOUT ME";
 const aboutMeP = document.createElement("p");
 aboutMeP.className = "aboutmeParagraph";
-aboutMeP.textContent = "Sea usted bienvenido, visitante! Y es que, la vida finalmente me ha traído hasta aquí, porque nada es casualidad y todos los caminos llevan a Roma! Provengo de un entorno artístico y enfocado al audiovisual en el que, durante casi 20 años, he cultivado habilidades creativas, organizativas y metódicas que estoy ahora aplicando en el mundo del desarrollo web y experiencias digitales. Con ojo crítico para el diseño y lo estético, (también un poquito de obsesión con la simetría) y una base técnica, estoy abierta a oportunidades y nuevos proyectos para crecer como desarrolladora, trabajar en equipo y contribuir con soluciones innovadoras.";
+aboutMeP.textContent = "Sea usted bienvenido, visitante! Provengo de un entorno artístico y enfocado al audiovisual en el que, durante casi 20 años, he cultivado habilidades creativas, organizativas y metódicas que estoy ahora aplicando en el mundo del desarrollo web y experiencias digitales. Con ojo crítico para el diseño y lo estético, (también un poquito de obsesión con la simetría) y una base técnica, estoy abierta a oportunidades y nuevos proyectos para crecer como desarrolladora, trabajar en equipo y contribuir con soluciones innovadoras.";
 
 
 const projectsDiv = document.querySelector("#projectsContainer");
 
 //contacto
 const contactSection = document.querySelector("#contact");
-const contactDiv = document.createElement("div");
-const input = document.createElement("input");
+const form = document.createElement("form");
+form.className = "contactForm";
+form.method = "post";
+const inputName = document.createElement("input");
+inputName.id = "name";
+inputName.placeholder = "Name";
+const inputMail = document.createElement("input");
+inputMail.id = "email";
+inputMail.placeholder = "email@gmail.com";
+const textForm = document.createElement("textarea");
+textForm.className = "message";
+const sendButton = document.createElement("button");
+sendButton.className = "send";
+sendButton.textContent = "ENVIAR";
 
+
+//footer
 const footerDivHTML = document.querySelector(".footerDiv");
 const footerSpan = document.createElement("span");
 footerSpan.textContent = "© Created by Maria Rivas - 2024";
@@ -110,11 +125,18 @@ aboutMeDiv.appendChild(aboutMeButton);
 aboutMeDiv.appendChild(aboutMeP);
 introPage.appendChild(educationDiv);
 introPage.appendChild(projectsDiv);
-contactSection.appendChild(contactDiv);
-contactDiv.appendChild(input);
+introPage.appendChild(contactSection);
+contactSection.appendChild(form);
+form.appendChild(inputName);
+form.appendChild(inputMail);
+form.appendChild(textForm);
+form.appendChild(sendButton);
 footerDivHTML.appendChild(footerSpan);
 
 
 addSkills(document.getElementById("skillsDiv"), skillsArray);
 addEducation(document.getElementById("educationDiv"), educationArray);
 projectCreator(document.getElementById("projectsContainer"), projects);
+//sendFormFunction(document.getElementById("contactDiv"));
+
+

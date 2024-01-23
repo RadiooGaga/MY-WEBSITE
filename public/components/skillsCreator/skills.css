@@ -30,7 +30,7 @@ button {
 
     button {
         font-size: var(--font-size-ms);
-        padding: 8px 12px;
+        padding: 7px 10px;
       }
 }
 
@@ -39,6 +39,15 @@ button {
     button {
         font-size: var(--font-size-ms);
         padding: 8px 12px;
+      }
+
+}
+
+@media screen and (min-width:1281px) and (max-width:1439px) {
+
+    button {
+        font-size: var(--font-size-ms);
+        padding: 11px 13px;
       }
 
 }
