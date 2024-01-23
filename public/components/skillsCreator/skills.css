@@ -21,7 +21,7 @@ button {
 @media screen and (min-width: 481px) and (max-width:768px) {
 
     button {
-        font-size: var(--font-size-m);
+        font-size: var(--font-size-ms);
         padding: 6px 8px;
       }
 }

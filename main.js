@@ -19,7 +19,7 @@ const educationArray = [
 const projects = [
     {
         span: "LANDING PAGE",
-        img: "./public/assets/projectsImg/landingImg.jpg",
+        img: "./assets/projectsImg/landingImg.jpg",
         url1:"https://proyecto1csstiendasuarez.netlify.app/",
         button1: "LINK 1",
         url2:"https://position-landing-page.netlify.app/",
@@ -29,7 +29,7 @@ const projects = [
 
     {
         span: "WEBSITE - SHOP",
-        img: "./public/assets/projectsImg/websiteImg.jpg",
+        img: "./assets/projectsImg/websiteImg.jpg",
         url1:"https://retrofeet-shop.netlify.app/",
         button1: "LINK 1",
         url2:"https://proyecto-3-async-pinterest.netlify.app/",
@@ -37,7 +37,7 @@ const projects = [
     },
     {
         span: "GAMES HUB",
-        img: "./public/assets/projectsImg/gamesImg.jpg",
+        img: "./assets/projectsImg/gamesImg.jpg",
         button1: "WORK IN PROGRESS"
          
     }

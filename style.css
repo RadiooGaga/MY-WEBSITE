@@ -248,8 +248,8 @@ footer {
   }
 
   #introPage {
-    top: 8em;
-    gap: 2em;
+    top: 6em;
+    gap: 1.5em;
   }
 
   .menuDiv {
@@ -298,8 +298,8 @@ footer {
   }
 
   #introPage {
-    top: 0em;
-    gap: 0em;
+    top: 8em;
+    gap: 1em;
   }
 
   #skillsDiv, .aboutMeDiv {
