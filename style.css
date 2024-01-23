@@ -22,17 +22,21 @@
     --rtc-font-family-4: "Gputeks-bold";
     
 
-    --rtc-color-pardo: #9c652a;
+    --rtc-color-pardo: #9a7a57;
     --rtc-color-petrolBlue:#384d50;
+    --rtc-color-surgeryGreen:#b2d8cc;
+    --rtc-color-bloodRed: #601700;
     --rtc-color-almostWhite: #e2e8e9;
     --rtc-color-almostBlack: #272929;
     
+  
     --font-size-xl: 25px;
     --font-size-l: 20px;
     --font-size-m: 16px;
     --font-size-ms: 12px;
     --font-size-s: 10px;
 
+    --padding-xxl: 30px;
     --padding-xl: 20px;
     --padding-l: 14px;
     --padding-m: 10px;
@@ -44,9 +48,11 @@ main {
   width: 100%;
   height: 100vh;
   background-color: var(--rtc-color-almostBlack);
+  scroll-behavior: smooth;
 }
 
 h1 {
+  font-size: 40px;
   font-family: var(--rtc-font-family-2);
 }
 
@@ -54,21 +60,27 @@ h2 {
   font-family: var(--rtc-font-family-3);
 }
 
+h3 {
+  font-family: var(--rtc-font-family-2);
+  font-size: var(--font-size-m);
+  color: var(--rtc-color-surgeryGreen);
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: var(--rtc-font-family-4);
+  font-size: var(--font-size-m);
+  color: var(--rtc-color-almostWhite);
+  letter-spacing: 1px;
+}
+
 .educationButton:hover, .projectsButton:hover, .aboutMeButton:hover {
   cursor: pointer;
 } 
 
-button {
-  font-family: var(--rtc-font-family-4);
-  letter-spacing: 1px;
-  padding: 10px 16px;
-  border-radius: 10px;
-  border: none;
-}
-
 .educationButton, .projectsButton {
   font-family: var(--rtc-font-family-2);
-  font-size: 25px;
+  font-size: 40px;
   color: var(--rtc-color-almostWhite);
   background-color: var(--rtc-color-petrolBlue);
 }
@@ -94,53 +106,42 @@ header {
   background-color: var(--rtc-color-almostBlack);
 }
 
-.headerDiv, .footerDiv, .mainContent {
-  padding: var(--padding-l);
+.headerDiv, .footerDiv {
+  padding: var(--padding-xxl);
 }
 
-#introContentPage {
+#introPage {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 1.5em;
+  top: 9em;
   gap: 2em;
   z-index: 1;
-  background-color: var(--rtc-color-petrolBlue);
+  background-color: var(--rtc-color-almostBlack);
 }
 
 /*  JUGAR CON LOS COLORES DE LOS BOTONES AL PASAR POR ENCIMA
-.skillsDiv > button:hover {
+#skillsDiv > button:hover {
   cursor: pointer;
   background-color: #384d50;
 }
 */
 
 
-.skillsDiv {
+#skillsDiv {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   width: 100%;
   height: auto;
   gap: 20px;
-  padding: var(--padding-xl);
+  padding-bottom: var(--padding-xxl);
   justify-content: center;
   align-items: center;
-  background-color: #9c652a;
-}
-
-.aboutMeDiv {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  padding: var(--padding-xl);
-  justify-content: center;
-  align-items: center;
-  background-color: #9c652a;
+  background-color: var(--rtc-color-almostBlack);
 }
 
 .menuDiv {
@@ -149,7 +150,8 @@ header {
   width: 100%;
   height: auto;
   gap: 10px;
-  padding: var(--padding-m);
+  padding: var(--padding-xxl);
+  background-color: var(--rtc-color-petrolBlue);
 }
 
 .menuLeft, .menuRight {
@@ -157,7 +159,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 33%;
-  border: 2px solid wheat;
+  /*border: 2px solid wheat;*/
 }
 
 .avatarDiv {
@@ -165,12 +167,31 @@ header {
   justify-content: center;
   align-items: center;
   width: 33%;
-  border: 1px solid wheat;
+  /*border: 1px solid wheat;*/
 }
 
 .avatarDiv > img {
-  width: 90%;
+  width: 70%;
   object-fit: contain;
+}
+
+.aboutMeDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 60px 60px 90px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--rtc-color-pardo);
+}
+
+.aboutmeParagraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 60px;
 }
 
 .footerDiv {
@@ -201,6 +222,8 @@ footer {
 }
 
 
+
+
 @media screen and (max-width:480px) {
 
   h1 {
@@ -211,35 +234,49 @@ footer {
     font-size: var(--font-size-l);
   }
 
+  .headerDiv {
+    padding: var(--padding-m);
+  }
+
   .educationButton, .projectsButton {
     font-size: var(--font-size-xl);
   }
 
-  .skillsDiv, .aboutMeDiv {
+  #skillsDiv, .aboutMeDiv {
     gap: 8px;
-    padding: var(--padding-s);
+    padding: var(--padding-m);
   }
 
-  button {
-    font-size: var(--font-size-s);
-    padding: 4px 8px;
-  }
-
-  #introContentPage {
-    top: 0em;
-    gap: 0.5em;
+  #introPage {
+    top: 7em;
+    gap: 1em;
   }
 
   .menuDiv {
     flex-direction: column; 
+    padding: var(--padding-l);
+    gap: 18px;
   }
 
   .menuLeft, .menuRight, .avatarDiv {
     width: 100%;
   }
 
+  .menuLeft, .menuRight {
+    border: 2px solid wheat;
+  }
+
   .avatarDiv > img {
     width: 50%;
+  }
+
+  .aboutMeDiv {
+    padding: var(--padding-l); 
+  }
+  
+  .aboutmeParagraph {
+    padding: var(--padding-xl); 
+    font-size: var(--font-size-s);
   }
 }
 
@@ -260,17 +297,12 @@ footer {
     font-size: var(--font-size-xl);
   }
 
-  #introContentPage {
+  #introPage {
     top: 0em;
     gap: 0em;
   }
 
-  button {
-    font-size: var(--font-size-m);
-    padding: 6px 8px;
-  }
-
-  .skillsDiv, .aboutMeDiv {
+  #skillsDiv, .aboutMeDiv {
     gap: 13px;
     padding: var(--padding-s);
   }
@@ -305,17 +337,12 @@ footer {
     font-size: var(--font-size-xl);
   }
   
-  #introContentPage {
+  #introPage {
     top: 0em;
     gap: 1em;
   }
 
-  button {
-    font-size: var(--font-size-ms);
-    padding: 8px 12px;
-  }
-
-  .skillsDiv, .aboutMeDiv {
+  #skillsDiv, .aboutMeDiv {
     gap: 10px;
     padding: var(--padding-m);
   }
@@ -338,17 +365,12 @@ footer {
 
 @media screen and (min-width:1024px) and (max-width:1280px) {
 
-  #introContentPage {
+  #introPage {
     top: 1.8em;
     gap: 1.5em;
   }
 
-  button {
-    font-size: var(--font-size-ms);
-    padding: 8px 12px;
-  }
-
-  .skillsDiv, .aboutMeDiv {
+  #skillsDiv, .aboutMeDiv {
     gap: 20px;
     padding: var(--padding-l);
   }

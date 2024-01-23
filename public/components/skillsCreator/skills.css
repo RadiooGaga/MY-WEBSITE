@@ -1,0 +1,45 @@
+
+button {
+    
+    font-family: var(--rtc-font-family-3);
+    letter-spacing: 1px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--rtc-color-surgeryGreen);
+}
+
+
+@media screen and (max-width:480px) {
+
+    button {
+        font-size: var(--font-size-s);
+        padding: 4px 8px;
+      }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+
+    button {
+        font-size: var(--font-size-m);
+        padding: 6px 8px;
+      }
+}
+
+@media screen and (min-width: 769px) and (max-width:1023px){
+
+    button {
+        font-size: var(--font-size-ms);
+        padding: 8px 12px;
+      }
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+
+    button {
+        font-size: var(--font-size-ms);
+        padding: 8px 12px;
+      }
+
+}
+

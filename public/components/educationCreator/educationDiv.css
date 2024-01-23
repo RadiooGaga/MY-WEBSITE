@@ -1,0 +1,51 @@
+#educationDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 60px 60px 90px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--rtc-color-almostBlack);
+}
+  
+#educationDiv > h3 {
+    padding-bottom: var(--padding-m);
+}
+
+#educationDiv > p {
+    padding-bottom: var(--padding-xxl);
+}
+
+@media screen and (max-width:480px) {
+
+    #educationDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 30px 50px 40px;
+    }
+
+    #educationDiv > h3 {
+        padding: var(--padding-l);
+    }
+    
+    #educationDiv > p {
+        padding-bottom: var(--padding-s);
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width:768px){
+
+}
+
+@media screen and (min-width: 769px) and (max-width:1023px){
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+
+}
