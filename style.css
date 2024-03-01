@@ -90,7 +90,7 @@ p {
   background-color: var(--rtc-color-petrolBlue);
 }
 
-#topButton:hover , .projectAncore:hover{
+#topButton:hover , button1:hover, button2:hover{
   cursor: pointer;
 }
 

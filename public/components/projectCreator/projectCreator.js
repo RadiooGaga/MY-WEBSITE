@@ -19,10 +19,8 @@ export const projectCreator = (parentDiv, projects) => {
         ancore2.target = "_blank";
     
         const button1 = document.createElement("button");
-        button1.classList.add = "projectAncore";
         button1.textContent = project.button1;
         const button2 = document.createElement("button");
-        button2.classList.add = "projectAncore";
         button2.textContent = project.button2;
 
         parentDiv.appendChild(projectDiv);
