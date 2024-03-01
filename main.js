@@ -42,8 +42,8 @@ const projects = [
         img: "./assets/projectsImg/gamesImg.jpg",
         url1:"https://juegos-reunidos.netlify.app/",
         button1: "JUEGOS REUNIDOS",
-        url2:"https://juegos-reunidos.netlify.app/",
-        button2: "JUEGOS REUNIDOS"
+        url2:"",
+        button2: "WORK IN PROGRESS"
     
     }
 ]
