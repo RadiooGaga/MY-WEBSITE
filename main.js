@@ -41,7 +41,9 @@ const projects = [
         span: "GAMES HUB",
         img: "./assets/projectsImg/gamesImg.jpg",
         url1:"https://juegos-reunidos.netlify.app/",
-        button1: "JUEGOS REUNIDOS"
+        button1: "JUEGOS REUNIDOS",
+        url2:"https://juegos-reunidos.netlify.app/",
+        button2: "JUEGOS REUNIDOS"
     
     }
 ]
