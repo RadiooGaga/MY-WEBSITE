@@ -24,7 +24,7 @@ const projects = [
         img: "./assets/projectsImg/landingImg.jpg",
         url1:"https://proyecto1csstiendasuarez.netlify.app/",
         button1: "LINK 1",
-        url2:"https://position-landing-page.netlify.app/",
+        url2:"https://landing-malakai.netlify.app/",
         button2: "LINK 2"
     
     },
