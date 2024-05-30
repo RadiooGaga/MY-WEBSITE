@@ -8,6 +8,7 @@ export const projectCreator = (parentDiv, projects) => {
         //projectDiv.className = "";
         const projectSpan = document.createElement("span");
         projectSpan.textContent = project.span;
+        projectSpan.style.color = "#272929";
         const projectImg = document.createElement("img");
         projectImg.src = project.img;
 
@@ -17,7 +18,9 @@ export const projectCreator = (parentDiv, projects) => {
         const ancore2 = document.createElement("a");
         ancore2.href = project.url2;
         ancore2.target = "_blank";
-    
+
+        const linksDiv = document.createElement('div');
+        linksDiv.id = "linksDiv";
         const button1 = document.createElement("button");
         button1.id = "project1-button";
         button1.textContent = project.button1;
@@ -28,9 +31,10 @@ export const projectCreator = (parentDiv, projects) => {
         parentDiv.appendChild(projectDiv);
         projectDiv.appendChild(projectSpan);
         projectDiv.appendChild(projectImg);
-        projectDiv.appendChild(ancore1);
+        projectDiv.appendChild(linksDiv);
+        linksDiv.appendChild(ancore1);
         ancore1.appendChild(button1);
-        projectDiv.appendChild(ancore2);
+        linksDiv.appendChild(ancore2);
         ancore2.appendChild(button2);
      
     }

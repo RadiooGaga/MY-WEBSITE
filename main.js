@@ -1,13 +1,13 @@
 import './style.css';
 
-import {addSkills} from "./public/components/skillsCreator/skills.js";
+import { addSkills } from "./public/components/skillsCreator/skills.js";
 import { addEducation } from './public/components/educationCreator/educationDiv.js';
 import { projectCreator } from './public/components/projectCreator/projectCreator.js';
 import { scrollFunction } from './public/components/scrollAction/scrollAction.js';
 import { toTheTop } from './public/components/scrollAction/buttonToTheTop.js';
 
 
-const skillsArray = ["HTML", "CSS", "JAVASCRIPT", "NODE.JS", "GIT", "DESIGN", "PREMIERE", "PHOTOSHOP", "AUDIO SKILLS", "AI"];
+const skillsArray = ["HTML", "CSS", "JAVASCRIPT", "NODE.JS", "GITHUB", "MONGODB", "VITE", "PREMIERE", "PHOTOSHOP", "AUDIO SKILLS", "AI"];
 const educationArray = [
     {
     title: "BOOTCAMP FULL STACK DEVELOPER",
@@ -21,17 +21,17 @@ const educationArray = [
 const projects = [
     {
         span: "LANDING PAGE",
-        img: "./assets/projectsImg/landingImg.jpg",
+        img: "./assets/projectsImg/suarez.png",
         url1:"https://proyecto1csstiendasuarez.netlify.app/",
         button1: "LINK 1",
-        url2:"https://landing-malakai.netlify.app/",
+        url2:"https://malakai-landingpage.netlify.app/",
         button2: "LINK 2"
     
     },
 
     {
         span: "WEBSITE - SHOP",
-        img: "./assets/projectsImg/websiteImg.jpg",
+        img: "./assets/projectsImg/retrofeet.png",
         url1:"https://retrofeet-shop.netlify.app/",
         button1: "LINK 1",
         url2:"https://proyecto-3-async-pinterest.netlify.app/",
@@ -39,11 +39,11 @@ const projects = [
     },
     {
         span: "GAMES HUB",
-        img: "./assets/projectsImg/gamesImg.jpg",
+        img: "./assets/projectsImg/gamesHub.png",
         url1:"https://juegos-reunidos.netlify.app/",
-        button1: "JUEGOS REUNIDOS",
+        button1: "LINK 1",
         url2:"",
-        button2: "WORK IN PROGRESS"
+        button2: "WORKING ON IT"
     
     }
 ]
