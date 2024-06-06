@@ -31,8 +31,10 @@ body {
     --rtc-color-petrolBlue:#384d50;
     --rtc-color-surgeryGreen:#b2d8cc;
     --rtc-color-bloodRed: #601700;
+    --rtc-color-softOrange: #eca691;
     --rtc-color-almostWhite: #dbe1e2;
     --rtc-color-almostBlack: #272929;
+
     
   
     --font-size-xl: 25px;
@@ -59,10 +61,12 @@ main {
 h1 {
   font-size: 40px;
   font-family: var(--rtc-font-family-2);
+  letter-spacing: 4px;
 }
 
 h2 {
   font-family: var(--rtc-font-family-3);
+  letter-spacing: 4px;
 }
 
 h3 {
@@ -103,7 +107,6 @@ p {
 }
 
 #topButton > img {
- 
   width: 60px;
   height: 60px;
   padding: var(--padding-m);
@@ -211,55 +214,6 @@ header {
   padding: 50px 60px;
 }
 
-#contact {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: auto;
-  background-color: var(--rtc-color-petrolBlue);
-}
-
-#contact > h2 {
-  position: absolute;
-  bottom: 18.2em;
-  color: var(--rtc-color-almostWhite);
-}
-
-.contactForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  gap: 10px;
-  width: 50%;
-  height: 500px;
-  background-color: var(--rtc-color-petrolBlue);
-}
-
-input, textarea {
-  width: 100%;
-  padding-left: 10px;
-  background-color: var(--rtc-color-almostWhite);
-  border: none;
-  border-radius: 5px;
-}
-
-input {
-  height: 50px;
-}
-
-textarea {
-  height: 100px;
-
-}
-
-.send {
-  display: flex;
-  justify-content: center;
-  width: 150px;
-}
-
 .footerDiv {
   display: flex;
   flex-direction: row;
@@ -273,7 +227,7 @@ textarea {
 
 span {
   font-family: var(--rtc-font-family-3);
-  font-size: 12px;
+  font-size: 14px;
   color: var(--rtc-color-almostWhite);
 }
 
@@ -300,8 +254,8 @@ footer {
   }
   
   #topButton > img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     padding: var(--padding-s);
   }
 
@@ -310,7 +264,8 @@ footer {
   }
 
   h2 {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
+    letter-spacing: 1px;
   }
 
   #headerDiv {
@@ -361,29 +316,13 @@ footer {
     padding: var(--padding-xl); 
     font-size: var(--font-size-s);
   }
- 
-  #contact {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: auto;
-    background-color: var(--rtc-color-petrolBlue);
+
+  #educationDiv {
+    padding: 20px 35px 30px;
   }
-  
-  #contact > h2 {
-    bottom: 18.2em;
-  }
-  
-  .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-    gap: 10px;
-    width: 60%;
-    height: 400px;
-    background-color: var(--rtc-color-petrolBlue);
+
+  #projectsContainer > div {
+    height: 500px;
   }
 
   .footerDiv {
@@ -398,8 +337,6 @@ footer {
   }
 
 }
-
-
 
 
 
@@ -460,10 +397,6 @@ footer {
     font-size: var(--font-size-ms);
   }
 
-  .contactForm {
-    height: 400px;
-  }
-
 }
   
 
@@ -504,6 +437,10 @@ footer {
     padding: var(--padding-xl); 
     font-size: var(--font-size-ms);
   }
+
+  label {
+    font-size: 12px;
+  }
 }
 
 
@@ -533,9 +470,6 @@ footer {
     font-size: var(--font-size-ms);
   }
 
-  .contact > h2 {
-    bottom: 28.2em;
-  }
 }
 
 

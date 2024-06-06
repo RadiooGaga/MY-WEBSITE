@@ -1,5 +1,6 @@
 import './style.css';
 
+import { Email } from './public/components/Email/email.js';
 import { addSkills } from "./public/components/skillsCreator/skills.js";
 import { addEducation } from './public/components/educationCreator/educationDiv.js';
 import { projectCreator } from './public/components/projectCreator/projectCreator.js';
@@ -21,7 +22,7 @@ const educationArray = [
 const projects = [
     {
         span: "LANDING PAGE",
-        img: "./assets/projectsImg/suarez.png",
+        img: "./assets/projectsImg/suarez.jpeg",
         url1:"https://proyecto1csstiendasuarez.netlify.app/",
         button1: "LINK 1",
         url2:"https://malakai-landingpage.netlify.app/",
@@ -31,7 +32,7 @@ const projects = [
 
     {
         span: "WEBSITE - SHOP",
-        img: "./assets/projectsImg/retrofeet.png",
+        img: "./assets/projectsImg/retrofeet.jpeg",
         url1:"https://retrofeet-shop.netlify.app/",
         button1: "LINK 1",
         url2:"https://proyecto-3-async-pinterest.netlify.app/",
@@ -98,20 +99,8 @@ const aboutMeDiv = document.querySelector("#aboutMeDiv");
 
 //contacto
 const contactSection = document.querySelector("#contact");
-const form = document.createElement("form");
-form.className = "contactForm";
-form.method = "post";
-const inputName = document.createElement("input");
-inputName.id = "name";
-inputName.placeholder = "Name";
-const inputMail = document.createElement("input");
-inputMail.id = "email";
-inputMail.placeholder = "email@gmail.com";
-const textForm = document.createElement("textarea");
-textForm.className = "message";
-const sendButton = document.createElement("button");
-sendButton.className = "send";
-sendButton.textContent = "ENVIAR";
+Email(contactSection);
+
 
 
 //footer
@@ -124,7 +113,6 @@ const buttonToTheTop = document.createElement("div");
 buttonToTheTop.id = "topButton";
 const toTopImg = document.createElement("img");
 toTopImg.src = "./assets/icons/flecha-hacia-arriba.png";
-
 
 
 headerDiv.appendChild(h1);
@@ -143,11 +131,6 @@ introPage.appendChild(educationDiv);
 introPage.appendChild(projectsDiv);
 introPage.appendChild(contactSection);
 
-contactSection.appendChild(form);
-form.appendChild(inputName);
-form.appendChild(inputMail);
-form.appendChild(textForm);
-form.appendChild(sendButton);
 footerDivHTML.appendChild(footerSpan);
 introPage.appendChild(buttonToTheTop);
 buttonToTheTop.appendChild(toTopImg);
