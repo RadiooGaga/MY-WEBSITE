@@ -114,7 +114,6 @@ textarea {
     }
       
     #contactoH2 {
-        bottom: 22em;
         font-size: 1em;
     }
       
@@ -146,7 +145,6 @@ textarea {
 
 @media screen and (min-width: 481px) and (max-width:768px) {
     #contactoH2 {
-        bottom: 24em;
         font-size: 1.5em;
     }
     
@@ -157,10 +155,6 @@ textarea {
 
 
 @media screen and (min-width: 769px) and (max-width:1023px){
-
-    #contactoH2 {
-        bottom: 23em;
-    }
 
     label {
         font-size: 12px;
@@ -175,7 +169,7 @@ textarea {
     }
 
     #contactoH2 {
-        bottom: 23em;
+        bottom: 24em;
     }
 
     label {
@@ -190,7 +184,7 @@ textarea {
     }
 
     #contactoH2 {
-        bottom: 23em;
+        bottom: 22em;
     }
 
     label {

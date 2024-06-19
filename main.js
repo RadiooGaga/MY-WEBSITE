@@ -55,7 +55,7 @@ const headerDiv = document.querySelector("#headerDiv");
 const h1 = document.createElement("h1");
 h1.textContent = "MARIA RIVAS";
 const h2 = document.createElement("h2");
-h2.textContent = "FULLSTACK JUNIOR DEVELOPER";
+h2.textContent = "FULLSTACK DEVELOPER";
 
 
 //menu central
@@ -113,6 +113,7 @@ const buttonToTheTop = document.createElement("div");
 buttonToTheTop.id = "buttonToTheTop";
 const toTopImg = document.createElement("img");
 toTopImg.src = "./assets/icons/flecha-hacia-arriba.png";
+toTopImg.id = "toTop";
 
 
 headerDiv.appendChild(h1);
@@ -130,20 +131,19 @@ aboutMeDiv.appendChild(aboutMeP);
 introPage.appendChild(educationDiv);
 introPage.appendChild(projectsDiv);
 introPage.appendChild(contactSection);
-introPage.appendChild(buttonToTheTop);
-buttonToTheTop.appendChild(toTopImg);
 introPage.appendChild(footerDivHTML);
 footerDivHTML.appendChild(footerSpan);
-
+introPage.appendChild(buttonToTheTop);
+buttonToTheTop.appendChild(toTopImg);
 
 
 addSkills(document.getElementById("skillsDiv"), skillsArray);
 addEducation(document.getElementById("educationDiv"), educationArray);
 projectCreator(document.getElementById("projectsContainer"), projects);
-scrollFunction(document.getElementById("educationButton"), "educationDiv");
-scrollFunction(document.getElementById("projectsButton"), "projectsContainer");
-scrollFunction(document.getElementById("aboutMeButton"), "aboutMeDiv");
-toTheTop(document.getElementById("topButton"), "skillsDiv");
+scrollFunction(document.getElementById("educationButton"), "start",  "educationDiv");
+scrollFunction(document.getElementById("projectsButton"),"nearest",  "projectsContainer");
+scrollFunction(document.getElementById("aboutMeButton"),"center",  "aboutMeDiv");
+toTheTop(document.getElementById("buttonToTheTop"), "skillsDiv");
 
 
 

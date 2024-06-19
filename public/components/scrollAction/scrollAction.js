@@ -1,6 +1,6 @@
 
 
-export const scrollFunction = (buttonId, parentDiv) => {
+export const scrollFunction = (buttonId, blockValue, parentDiv) => {
 
     const goToDiv = document.getElementById(parentDiv);
     const scrollButton = buttonId;
@@ -8,7 +8,7 @@ export const scrollFunction = (buttonId, parentDiv) => {
     scrollButton.addEventListener("click", (event) => {
         goToDiv.scrollIntoView({ 
             behavior: 'smooth',
-            block:'center',
+            block:blockValue,
             inline: 'nearest' });  
     })
 }

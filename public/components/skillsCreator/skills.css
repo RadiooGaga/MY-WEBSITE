@@ -1,17 +1,3 @@
-#skillsDiv > button {
-    border: none;
-}
-
-
-button {
-    
-    font-family: var(--rtc-font-family-3);
-    letter-spacing: 1px;
-    padding: 10px 16px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--rtc-color-surgeryGreen);
-}
 
 
 @media screen and (max-width:480px) {
