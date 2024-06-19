@@ -74,6 +74,7 @@ const avatarDiv = document.createElement("div");
 avatarDiv.className = "avatarDiv";
 const imgAvatar = document.createElement("img");
 imgAvatar.src = "./assets/icons/favicon.png";
+imgAvatar.id = "avatar";
 
 const rightSide = document.createElement("div");
 rightSide.className = "menuRight";

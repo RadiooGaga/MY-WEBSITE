@@ -93,6 +93,10 @@ button {
   background-color: var(--rtc-color-surgeryGreen);
 }
 
+#avatar {
+  filter: grayscale(40%);
+}
+
 #educationButton:hover, #projectsButton:hover, #aboutMeButton:hover {
   cursor: pointer;
 } 
