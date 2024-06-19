@@ -8,15 +8,15 @@ import { scrollFunction } from './public/components/scrollAction/scrollAction.js
 import { toTheTop } from './public/components/scrollAction/buttonToTheTop.js';
 
 
-const skillsArray = ["HTML", "CSS", "JAVASCRIPT", "NODE.JS", "GITHUB", "MONGODB", "VITE", "PREMIERE", "PHOTOSHOP", "AUDIO SKILLS", "AI"];
+const skillsArray = ["HTML", "CSS", "JAVASCRIPT", "NODE.JS", "GITHUB", "MONGODB", "VITE", "FIGMA", "PREMIERE", "PHOTOSHOP", "AUDIO SKILLS", "AI"];
 const educationArray = [
     {
     title: "BOOTCAMP FULL STACK DEVELOPER",
-    course: "Rock The Code - ThePowerMBA Business School - jan 2023/jan2024"
+    course: "{Rock The Code} - ThePowerMBA Business School - June 2023/Dec 2024"
     },
     {
     title: "RELEVANT COURSES",
-    course: "E-Commerce with Wordpress - Adobe XD - Sound engineer degree"
+    course: "E-Commerce with Wordpress - Figma - Sound engineer degree"
     }
 ]
 const projects = [
@@ -55,7 +55,7 @@ const headerDiv = document.querySelector("#headerDiv");
 const h1 = document.createElement("h1");
 h1.textContent = "MARIA RIVAS";
 const h2 = document.createElement("h2");
-h2.textContent = "FULLSTACK DEVELOPER";
+h2.textContent = "FULLSTACK JR DEVELOPER";
 
 
 //menu central
@@ -140,7 +140,7 @@ buttonToTheTop.appendChild(toTopImg);
 addSkills(document.getElementById("skillsDiv"), skillsArray);
 addEducation(document.getElementById("educationDiv"), educationArray);
 projectCreator(document.getElementById("projectsContainer"), projects);
-scrollFunction(document.getElementById("educationButton"), "nearest",  "educationDiv");
+scrollFunction(document.getElementById("educationButton"), "center",  "educationDiv");
 scrollFunction(document.getElementById("projectsButton"),"nearest",  "projectsContainer");
 scrollFunction(document.getElementById("aboutMeButton"),"center",  "aboutMeDiv");
 toTheTop(document.getElementById("buttonToTheTop"), "skillsDiv");
