@@ -9,6 +9,10 @@ export const Email = (parentDiv) => {
     const emailForm = document.createElement("form");
     emailForm.className = "contactForm";
     emailForm.method = "submit";
+
+    const h2Contact = document.createElement('h2');
+    h2Contact.textContent = "CONTACTO";
+    h2Contact.id = "contactoH2";
      
     const errorMessage = document.createElement('p');
     errorMessage.id = "errorMessage";
@@ -27,6 +31,7 @@ export const Email = (parentDiv) => {
     `
 
     parentDiv.appendChild(emailForm);
+    emailForm.appendChild(h2Contact);
     emailForm.appendChild(errorMessage);
     emailForm.appendChild(successMessage);
 

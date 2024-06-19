@@ -55,7 +55,7 @@ const headerDiv = document.querySelector("#headerDiv");
 const h1 = document.createElement("h1");
 h1.textContent = "MARIA RIVAS";
 const h2 = document.createElement("h2");
-h2.textContent = "FRONTEND DEVELOPER";
+h2.textContent = "FULLSTACK JUNIOR DEVELOPER";
 
 
 //menu central
@@ -110,7 +110,7 @@ footerSpan.textContent = "© Created by Maria Rivas - 2024";
 
 //to the top
 const buttonToTheTop = document.createElement("div");
-buttonToTheTop.id = "topButton";
+buttonToTheTop.id = "buttonToTheTop";
 const toTopImg = document.createElement("img");
 toTopImg.src = "./assets/icons/flecha-hacia-arriba.png";
 
@@ -130,10 +130,11 @@ aboutMeDiv.appendChild(aboutMeP);
 introPage.appendChild(educationDiv);
 introPage.appendChild(projectsDiv);
 introPage.appendChild(contactSection);
-
-footerDivHTML.appendChild(footerSpan);
 introPage.appendChild(buttonToTheTop);
 buttonToTheTop.appendChild(toTopImg);
+introPage.appendChild(footerDivHTML);
+footerDivHTML.appendChild(footerSpan);
+
 
 
 addSkills(document.getElementById("skillsDiv"), skillsArray);

@@ -94,27 +94,27 @@ p {
   background-color: var(--rtc-color-petrolBlue);
 }
 
-#topButton:hover , #project1-button:hover, #project2-button:hover{
+#buttonToTheTop:hover , #project1-button:hover, #project2-button:hover{
   cursor: pointer;
 }
 
-#topButton {
+#buttonToTheTop {
+  width: 72px;
+  height: 72px;
   position: absolute;
-  right: 3em;
-  bottom: 7em;
+  right: 8em;
+  bottom: 12em;
   background-color: var(--rtc-color-surgeryGreen);
   border-radius:10px ;
 }
 
-#topButton > img {
-  width: 60px;
-  height: 60px;
+#buttonToTheTop > img {
+  width: 100%;
   padding: var(--padding-m);
 }
 
 header {
   display: flex;
-  position: fixed;
   top: 0;
   z-index: 3;
   width: 100%;
@@ -157,11 +157,11 @@ header {
   list-style: none;
   width: 100%;
   height: auto;
+  margin: 40px 0px 0px;
   gap: 20px;
-  padding-bottom: var(--padding-xxl);
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: var(--rtc-color-almostBlack);
+  background-color: var(--rtc-color-surgeryGreen);
 }
 
 .menuDiv {
@@ -232,13 +232,9 @@ span {
 }
 
 footer {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  flex-wrap: wrap;
-  z-index: 3;
   width: 100%;
   height: auto;
+  display: flex;
   background-color: var(--rtc-color-almostBlack);
 }
 
@@ -247,15 +243,17 @@ footer {
 
 @media screen and (max-width:480px) {
 
-  #topButton {
-    position: absolute;
-    right: 1em;
-    bottom: 5em;
-  }
-  
-  #topButton > img {
+  #buttonToTheTop {
     width: 35px;
     height: 35px;
+    position: absolute;
+    right: 2em;
+    bottom: 6em;
+
+  }
+  
+  #buttonToTheTop > img {
+    width: 100%;
     padding: var(--padding-s);
   }
 
@@ -273,7 +271,7 @@ footer {
   }
 
   #introPage {
-    top: 6em;
+    top: 4em;
     gap: 1em;
   }
 
@@ -282,7 +280,8 @@ footer {
   }
 
   #skillsDiv, #aboutMeDiv {
-    gap: 8px;
+    margin: 20px 0px 0px;
+    gap: 0px;
     padding: var(--padding-s);
   }
 
@@ -342,15 +341,16 @@ footer {
 
 @media screen and (min-width: 481px) and (max-width:768px){
 
-  #topButton {
+  #buttonToTheTop {
+    width: 50px;
+    height: 50px;
     position: absolute;
     right: 2em;
-    bottom: 8em;
+    bottom: 12em;
   }
   
-  #topButton > img {
-    width: 40px;
-    height: 40px;
+  #buttonToTheTop > img {
+    width: 100%;
     padding: var(--padding-s);
   }
 
@@ -366,7 +366,7 @@ footer {
   }
 
   #introPage {
-    top: 8em;
+    top: 6em;
     gap: 2em;
   }
 
@@ -403,16 +403,31 @@ footer {
 
 @media screen and (min-width: 769px) and (max-width:1023px){
 
+  #buttonToTheTop {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 3em;
+    bottom: 12em;
+  }
+  
+  #buttonToTheTop > img {
+    width: 100%;
+    padding: var(--padding-s);
+  }
+
   #projectsButton, #educationButton {
     font-size: 28px;
   }
   
   #introPage {
-    top: 7sem;
+    top: 7em;
     gap: 2em;
   }
 
   #skillsDiv, #aboutMeDiv {
+    display: flex;
+    justify-content: center;
     gap: 10px;
     padding: 0px 20px;
   }
@@ -446,9 +461,21 @@ footer {
 
 
 @media screen and (min-width:1024px) and (max-width:1279px) {
+  #buttonToTheTop {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    right: 3em;
+    bottom: 12em;
+  }
+  
+  #buttonToTheTop > img {
+    width: 100%;
+    padding: var(--padding-s);
+  }
 
   #introPage {
-    top: 9em;
+    top: 7em;
     gap: 2em;
   }
 
@@ -476,6 +503,19 @@ footer {
 
 @media screen and (min-width:1280px) and (max-width:1439px) {
 
+  #buttonToTheTop {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 4em;
+    bottom: 10em;
+  }
+  
+  #buttonToTheTop > img {
+    width: 100%;
+    padding: var(--padding-s);
+  }
+
   #headerDiv, .footerDiv {
     padding: var(--padding-l);
   }
@@ -498,6 +538,7 @@ footer {
   }
 
   #skillsDiv, #aboutMeDiv {
+    margin: 40px 0px 0px;
     gap: 20px;
     padding: 0px;
   }
