@@ -140,7 +140,7 @@ buttonToTheTop.appendChild(toTopImg);
 addSkills(document.getElementById("skillsDiv"), skillsArray);
 addEducation(document.getElementById("educationDiv"), educationArray);
 projectCreator(document.getElementById("projectsContainer"), projects);
-scrollFunction(document.getElementById("educationButton"), "start",  "educationDiv");
+scrollFunction(document.getElementById("educationButton"), "nearest",  "educationDiv");
 scrollFunction(document.getElementById("projectsButton"),"nearest",  "projectsContainer");
 scrollFunction(document.getElementById("aboutMeButton"),"center",  "aboutMeDiv");
 toTheTop(document.getElementById("buttonToTheTop"), "skillsDiv");
