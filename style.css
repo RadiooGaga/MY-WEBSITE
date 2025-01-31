@@ -1,16 +1,17 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-@font-face {font-family: "Karnivore-heavy"; src:url("/fonts/Karnivore-Lite/KARNIVOT.ttf") format("truetype"); font-weight:lighter;font-style: normal;
+@font-face {font-family: "Karnivore-heavy"; src:url("assets/fonts/Karnivore-Lite/KARNIVOT.ttf") format("truetype"); font-weight:lighter;font-style: normal;
 }
-@font-face {font-family: "Karnivore-soft"; src:url("/fonts/Karnivore-Lite/KARNIVOL.ttf") format("truetype"); font-weight:lighter;font-style: normal;
+@font-face {font-family: "Karnivore-soft"; src:url("assets/fonts/Karnivore-Lite/KARNIVOL.ttf") format("truetype"); font-weight:lighter;font-style: normal;
 }
-@font-face {font-family: "Gputeks-bold"; src:url("/fonts/gputeks/Gputeks-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal;
+@font-face {font-family: "Gputeks-bold"; src:url("assets/fonts/gputeks/Gputeks-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal;
 }
-@font-face {font-family: "Lane"; src:url("/fonts/Lane/LANENAR_.ttf") format("truetype"); font-weight:lighter; font-style: normal;
+@font-face {font-family: "Lane"; src:url("assets/fonts/Lane/LANENAR_.ttf") format("truetype"); font-weight:lighter; font-style: normal;
 }
 
 body {
