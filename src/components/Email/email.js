@@ -1,8 +1,12 @@
+import './email.css';
 import { fieldForm } from '../FieldForm/fieldForm';
 
 //IMPORTAMOS LA LIBRERÍA DE EMAIL JS
 import emailjs from '@emailjs/browser';
-import './email.css';
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+emailjs.init(publicKey);
+
+
 
 export const Email = (parentDiv) => {
 
@@ -45,9 +49,6 @@ const submit = async (e) => {
     e.preventDefault();
     console.log(e)
     const [email, subject, content] = e.target;
-    console.log(email)
-    console.log(subject)
-    console.log(content)
 
     const errorMessage = e.target.querySelector("#errorMessage"); 
     const successMessage = e.target.querySelector("#successMessage");
