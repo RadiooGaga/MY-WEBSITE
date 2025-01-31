@@ -89,7 +89,7 @@ const submit = async (e) => {
             import.meta.env.VITE_SERVICE_ID,
             import.meta.env.VITE_TEMPLATE_ID,
             templateParams,
-            { publicKey: import.meta.env.VITE_PUBLIC_KEY }
+            { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY}
         );
 
         e.target.classList.remove('loading');
